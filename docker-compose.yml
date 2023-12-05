@@ -1,0 +1,24 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./Lecto-v3.0-API
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: Lecto-3-api
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONOPTIMIZE=1
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 3096MB
+  app:
+    build:
+      context: ./Lecto-v3.0-Front
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    container_name: Lecto-3-app
