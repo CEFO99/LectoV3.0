@@ -1,0 +1,6 @@
+[submodule "Lecto-v3.0-API"]
+	path = Lecto-v3.0-API
+	url = https://github.com/FranE9/Lecto-v3.0-API
+[submodule "Lecto-v3.0-Front"]
+	path = Lecto-v3.0-Front
+	url = https://github.com/FranE9/Lecto-v3.0-Front
